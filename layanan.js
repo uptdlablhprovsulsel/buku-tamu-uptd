@@ -1,4 +1,3 @@
-
 const scriptURL = "MASUKKAN_URL_WEB_APP_ANDA";
 
 const complaintForm = document.getElementById("complaintForm");
