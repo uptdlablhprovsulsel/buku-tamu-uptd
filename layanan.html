@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulir Pengaduan Online UPTD Laboratorium Lingkungan Hidup Provinsi Sulawesi Selatan">
+  <title>Pengaduan Layanan | UPTD Lab LH Sulsel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="layanan.css">
+</head>
+
+<body class="complaint-page">
+  <header class="complaint-header">
+    <div class="complaint-container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Logo UPTD" onerror="this.style.display='none'">
+        <span>
+          <strong>UPTD LAB LH SULSEL</strong>
+          <small>Layanan Pelanggan</small>
+        </span>
+      </a>
+      <a class="back-link" href="index.html">← Menu Utama</a>
+    </div>
+  </header>
+
+  <main class="complaint-container complaint-main">
+    <div class="page-intro">
+      <p class="eyebrow">LAYANAN PELANGGAN</p>
+      <h1>Pengaduan Layanan</h1>
+      <p>
+        Sampaikan pengaduan, masukan, atau saran terkait pelayanan
+        UPTD Laboratorium Lingkungan Hidup Provinsi Sulawesi Selatan.
+      </p>
+    </div>
+
+    <div class="complaint-grid">
+      <section class="panel">
+        <h2>Formulir Pengaduan</h2>
+        <p class="panel-description">
+          Silakan lengkapi seluruh kolom bertanda bintang (*).
+        </p>
+
+        <form id="complaintForm">
+          <div class="form-group">
+            <label for="namaPengadu">Nama *</label>
+            <input id="namaPengadu" name="nama" type="text"
+                   maxlength="120" autocomplete="name"
+                   placeholder="Masukkan nama lengkap" required>
+          </div>
+
+          <div class="form-group">
+            <label for="alamatPengadu">Alamat *</label>
+            <textarea id="alamatPengadu" name="alamat" rows="2"
+                      maxlength="500" autocomplete="street-address"
+                      placeholder="Masukkan alamat" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="hpPengadu">No. Telepon *</label>
+            <input id="hpPengadu" name="hp" type="tel"
+                   maxlength="25" autocomplete="tel"
+                   placeholder="Masukkan nomor telepon" required>
+          </div>
+
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi Pengaduan *</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4"
+                      maxlength="3000"
+                      placeholder="Jelaskan pengaduan Anda"
+                      required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="harapan">Harapan/Tindak Lanjut *</label>
+            <textarea id="harapan" name="harapan" rows="3"
+                      maxlength="2000"
+                      placeholder="Tuliskan harapan atau tindak lanjut"
+                      required></textarea>
+          </div>
+
+          <button class="submit-button" type="submit">
+            Kirim Pengaduan
+          </button>
+
+          <div id="complaintStatus" class="form-status"
+               role="status" aria-live="polite" hidden></div>
+        </form>
+      </section>
+
+      <aside class="panel contact-panel">
+        <h2>Kontak dan Informasi</h2>
+        <p class="panel-description">
+          Hubungi kami melalui kanal berikut.
+        </p>
+
+        <div class="contact-item">
+          <strong>WhatsApp</strong>
+          <p>+62 821 9688 8515</p>
+          <a href="https://wa.me/6282196888515"
+             target="_blank" rel="noopener noreferrer">
+            Hubungi melalui WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Instagram</strong>
+          <p>@uptdlablh</p>
+          <a href="https://www.instagram.com/uptdlablh/"
+             target="_blank" rel="noopener noreferrer">
+            Kunjungi Instagram
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Facebook</strong>
+          <p>Media sosial</p>
+          <a href="https://www.facebook.com/"
+             target="_blank" rel="noopener noreferrer">
+            Buka Facebook
+          </a>
+        </div>
+
+        <div class="information-note">
+          <strong>Informasi</strong>
+          <p>
+            Isilah data secara benar dan gunakan bahasa yang sopan.
+            Jangan sertakan kata sandi atau informasi rahasia.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="complaint-footer">
+    © 2026 UPTD Laboratorium Lingkungan Hidup Provinsi Sulawesi Selatan
+  </footer>
+
+  <script src="layanan.js"></script>
+</body>
+</html>
