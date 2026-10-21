@@ -1,3 +1,4 @@
+
 const scriptURL = "https://script.google.com/macros/s/AKfycbyPIyuEtQ4oDEcrv3XzoTwbYjxy-QRKizQkdP2iB347AVw-wudYWrgDR74AlfsrtyH3/exec";
 
 const complaintForm = document.getElementById("complaintForm");
@@ -10,6 +11,12 @@ if (complaintForm) {
 
     const status = document.getElementById("complaintStatus");
     const button = this.querySelector('button[type="submit"]');
+
+    if (!status || !button) {
+      console.error("Elemen status atau tombol kirim tidak ditemukan.");
+      return;
+    }
+
     const originalText = button.textContent;
 
     const data = {
@@ -26,19 +33,22 @@ if (complaintForm) {
     status.hidden = true;
 
     try {
+      // Kirim sebagai data formulir agar Apps Script
+      // dapat membaca JSON melalui e.parameter.payload.
+      const formData = new URLSearchParams();
+      formData.append("payload", JSON.stringify(data));
+
       await fetch(scriptURL, {
         method: "POST",
         mode: "no-cors",
-        body: JSON.stringify(data)
+        body: formData
       });
 
       status.textContent =
-        "Permintaan pengiriman telah dilakukan. Periksa Google Sheets untuk memastikan data tersimpan.";
+        "Permintaan telah dikirim. Periksa Google Sheets untuk memastikan data tersimpan.";
       status.className = "form-status";
       status.hidden = false;
 
-      // Form tidak langsung dikosongkan supaya pengguna
-      // dapat menyalin data jika perlu melakukan pengiriman ulang.
     } catch (error) {
       console.error("Kesalahan pengiriman:", error);
 
@@ -46,6 +56,7 @@ if (complaintForm) {
         "Pengiriman gagal dimulai. Periksa koneksi internet dan coba kembali.";
       status.className = "form-status error";
       status.hidden = false;
+
     } finally {
       button.disabled = false;
       button.textContent = originalText;
