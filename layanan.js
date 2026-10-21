@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbzRe2lgV8StipYay4ghixsGdkrZXdUpyDi6OGLApV3bidBWkD7Di88mAXAFdGsOkzWI/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyPIyuEtQ4oDEcrv3XzoTwbYjxy-QRKizQkdP2iB347AVw-wudYWrgDR74AlfsrtyH3/exec";
 
 const complaintForm = document.getElementById("complaintForm");
 
