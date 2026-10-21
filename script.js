@@ -2,7 +2,7 @@
 // KONFIGURASI
 // ======================================
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbzRe2lgV8StipYay4ghixsGdkrZXdUpyDi6OGLApV3bidBWkD7Di88mAXAFdGsOkzWI/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyTwXjwglvQ5bsu44XUTIy5W6cnz-jgMe-wm_ZAxdSrKxA4t18jGBEJ2E57x_TrdP7H/exec";
 
 const form = document.getElementById("guestForm");
 const status = document.getElementById("status");
