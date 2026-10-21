@@ -1,4 +1,4 @@
-const scriptURL = "https://uptdlablhprovsulsel.github.io/buku-tamu-uptd/";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzRe2lgV8StipYay4ghixsGdkrZXdUpyDi6OGLApV3bidBWkD7Di88mAXAFdGsOkzWI/exec";
 
 const complaintForm = document.getElementById("complaintForm");
 
