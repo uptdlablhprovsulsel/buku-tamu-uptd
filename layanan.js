@@ -1,4 +1,4 @@
-const scriptURL = "MASUKKAN_URL_WEB_APP_ANDA";
+const scriptURL = "https://uptdlablhprovsulsel.github.io/buku-tamu-uptd/";
 
 const complaintForm = document.getElementById("complaintForm");
 
