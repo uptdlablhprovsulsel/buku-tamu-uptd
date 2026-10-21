@@ -1,5 +1,5 @@
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbyPIyuEtQ4oDEcrv3XzoTwbYjxy-QRKizQkdP2iB347AVw-wudYWrgDR74AlfsrtyH3/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwUMX_T6dO2htqRAB2A5fDdxywroi3t-gUI8rEeadCJA1ng_iJJI5AB46sgTe4Eb0BZ/exec";
 
 const complaintForm = document.getElementById("complaintForm");
 
